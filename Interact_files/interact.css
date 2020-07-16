@@ -1,0 +1,179 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fafafa;
+}
+
+/* menu css */
+#header {
+  background-color: #43e08d;
+}
+
+#first-logo {
+  width: 7%;
+  /* display: flex; */
+  /* justify-content: center; */
+  margin-left: 10%;
+}
+
+a {
+  color: white;
+  font-size: 150%;
+  margin-left: 1%;
+  margin-right: 1%;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+#menu-links {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  right: 5%;
+}
+/* end of menu css */
+
+
+
+
+/* button css */
+.button {
+  background-color: #4ead4b;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 22px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.button:hover {opacity: 1}
+
+
+.header {
+  margin-top: 4%;
+  font-size: 500%;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 3%;
+}
+
+#coming-soon {
+  /* color: #9961ad; */
+  font-size: 230%;
+}
+
+#intro {
+  background-color: #98e4f5;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 10px;
+  width: 65%;
+}
+
+#why {
+  background-color: #fff28c;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 10px;
+  width: 65%;
+}
+
+#start {
+  background-color: #67eb86;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 10px;
+  width: 65%;
+}
+
+#info {
+  background-color: #52b8f7;
+}
+
+p {
+  font-size: 130%;
+  text-align: center;
+}
+
+#instagram-icon {
+  width: 3%;
+  margin-top: 2%;
+}
+
+.activity-row {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 1%;
+}
+
+.activity {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 1%;
+  width: 20%;
+}
+
+.activity-pic {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.description {
+  font-size: 120%;
+}
+
+#instagram-icon {
+  width: 3%;
+  margin-top: 2%;
+}
+
+/* #links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+} */
+
+.activity img:hover {
+    outline: #333 solid 7px;
+}
+
+/* .STOP-MOVING {
+  width: 80%;
+} */
+
+/* FOOTER CSS  */
+#info {
+  background-color: #52b8f7;
+}
+#links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  #menu-links {
+    font-size: 70%;
+  }
+}

@@ -1,0 +1,319 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Quicksand', sans-serif;
+  background-color: white;
+  /* background-color: #99f7d2; */
+
+
+  /* background images  */
+  background: url("http://helloo-world.com/About/background-pics/bulb.PNG") 107% 1.5% no-repeat,
+  url("http://helloo-world.com/About/background/computer.PNG") -10% 12% no-repeat,
+  url("http://helloo-world.com/About/background/earth.PNG") 112% 29% no-repeat,
+  url("http://helloo-world.com/About/background/fist.PNG") -7% 46% no-repeat,
+  url("http://helloo-world.com/About/background/heart.PNG") 110% 57% no-repeat,
+  url("http://helloo-world.com/About/background/rocket.PNG") -7% 75% no-repeat,
+  url("http://helloo-world.com/About/background/print.PNG") 102% 90% no-repeat;
+
+  background-attachment: scroll;
+  background-size: 20%;
+}
+
+
+/* menu css */
+#header {
+  background-color: #43e08d;
+}
+
+#first-logo {
+  width: 7%;
+  /* display: flex; */
+  /* justify-content: center; */
+  margin-left: 10%;
+}
+
+a {
+  color: white;
+  font-size: 150%;
+  margin-left: 1%;
+  margin-right: 1%;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+#menu-links {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  right: 5%;
+}
+/* end of menu css */
+
+#mission-box {
+  background-color: #2BC683;
+  padding: 3%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+
+
+
+.header {
+  font-size: 300%;
+  /* margin-top: 5%; */
+}
+
+
+#about {
+  font-size: 500%;
+  text-align: center;
+  margin-top: 5%;
+}
+
+/* #message {
+  padding: 1%;
+  margin-left: 24%;
+  margin-right: 20%;
+} */
+
+.indented-header {
+  padding: 1%;
+  margin-left: 19%;
+  margin-right: 15%;
+  font-size: 300%;
+}
+
+.indented-text{
+  text-align: left;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+h2 {
+  font-size: 250%;
+}
+
+.text {
+  font-size: 120%;
+}
+
+/* .profile-row {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+} */
+
+
+
+
+/* #about { */
+  /* background-color: #51d670; */
+  /* background-color: #74d68b;
+  padding: 1%;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 10px; */
+/* } */
+
+#recruit {
+  background-color: #74F2D4;
+  padding: 1%;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 10px;
+}
+
+#questions {
+  margin-top: 7%;
+}
+
+/* button css */
+.button {
+  background-color: #2BC683;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 22px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.button:hover {opacity: 1}
+
+p {
+  font-size: 150%;
+}
+
+#context{
+  text-align: left;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+#message {
+  /* display: flex;
+  flex-direction: row; */
+  background-color: #7CE4FF;
+  padding: 3%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+
+/* PROFILES CSS */
+
+/* Applicable to all profiles - sets text next to a picture */
+
+  .all-profiles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+.profiles {
+  display: flex;
+  margin-left: 15%;
+  margin-top: 2%;
+  /* flex-direction: row; */
+  /* justify-content: center; */
+}
+
+/* Makes all profile text align to the left */
+.profile-text {
+  text-align: left;
+  margin-left: 3%;
+  margin-top: 2%;
+}
+
+/* Sets bio text to 115% and a top margin of 2% */
+.bio {
+  font-size: 115%;
+  margin-top: 2%;
+  margin-right: 15%;
+}
+
+
+
+#gabby-banaag {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.member-list {
+  text-align: center;
+}
+
+
+/* FOOTER CSS  */
+#info {
+  background-color: #52b8f7;
+}
+#links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#menu-links {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  right: 5%;
+}
+
+#instagram-icon {
+  width: 3%;
+  margin-top: 2%;
+}
+
+/* END OF FOOTER CSS */
+
+
+
+
+
+
+
+
+
+
+
+
+/* #headshot {
+  width: 30%;
+} */
+
+/* flip a dip dip  - flipcard css */
+  /* .flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+    perspective: 1000px;
+    margin: 1%;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    /* border-radius: 50%;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    border-radius: 50%;
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 50%;
+  }
+
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  } */
+
+  /* .flip-card-back {
+    font-size: 100%;
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  gabby's background
+  #gabby-banaag {
+    background-color: #ba84e8;
+  }
+
+  monique's background
+  #monique-osmena {
+    background-color: #d4baf7;
+  }  */
