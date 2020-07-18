@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <!-- saved from url=(0040)http://helloo-world.com/learn/learn.html -->
-<html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title> Helloo Hacks </title>
     <link rel="stylesheet" href="./Hackathon_files/hackathon.css">
     <link href="./Hackathon_files/css" rel="stylesheet">
     <link rel="icon" href="./Hackathon_files/earth.PNG">
-    </head>
+  </head>
+
   <body>
+
     <!-- menu -->
     <div id="header">
         <center>
@@ -22,14 +25,19 @@
           <a href="Create.html">Create</a>
         </div>
     </div>
+    
+    <!--About, Intro-->
     <img id = "about-bkg" src="./Hackathon_files/about-bk.svg" alt="">
     <div id = "intro">
-      <h1 class="header">HELLOO HACKS</h1><br>
-      <h2 id = "when"> August 24 - August 25 | Virtual Event</h2><br>
+      <h1 class="header">HELLOO HACKS</h1>
+      <br>
+      <h2 id = "when"> August 24 - August 25 | Virtual Event</h2>
+      <br>
       <p id = "description"> Lorem ipsum dolor sit amet, sea at idque torquatos deseruisse. Minim dicit euismod ne pro, pro ne duis iusto voluptua.</p>
-      <a href="hi" id = "register"><div class = "grow register">REGISTER</div></a>
+      <a href="hi" id = "register">
+        <div class = "grow register">REGISTER</div>
+      </a>
     </div>
-
     <img id = "spinnystar" src="./Hackathon_files/spinny.svg" alt="spinning star">
     <img id = "spinnystar2" src="./Hackathon_files/spinny2.svg" alt="spinning star">
     <br>
@@ -37,13 +45,14 @@
     <br>
     <br>
 
+    <!-- Prizes -->
     <div id = "Prizes">
       <h2 class="header"> PRIZES </h2>
       <br><br>
       <div id = "prize-container">
-        <div><img src="./Hackathon_files/1st-place.svg" class = "grow prize-bkg" alt="curly box"></div>
-        <div><img src="./Hackathon_files/2nd-place.svg" class = "grow prize-bkg" alt="curly box"></div>
-        <div><img src="./Hackathon_files/3rd-place.svg" class = "grow prize-bkg" alt="curly box"></div>
+        <div><img src="./Hackathon_files/1st-place.svg" class = "grow prize-bkg" alt="box"></div>
+        <div><img src="./Hackathon_files/2nd-place.svg" class = "grow prize-bkg" alt="box"></div>
+        <div><img src="./Hackathon_files/3rd-place.svg" class = "grow prize-bkg" alt="box"></div>
         <div>
           <h3>1st Place</h3>
           <p>Lorem ipsum dolor sit amet</p>
@@ -59,28 +68,31 @@
       </div>
     </div>
 
+    <!-- Schedule -->
     <div id = "schedule">
       <br><br>
       <br><br>
       <br><br>
       <br><br>
       <section>
-      <h2 class="header"> SCHEDULE </h2><br><br>
+      <h2 class="header"> SCHEDULE </h2>
+      <br>
+      <br>
       <div id = "toggleSchedule"> 
         <a onclick="showDay1();" href = "" style = "display: inline-block;">
-          <div class="changeSchedule" id = "showDay1pin"></div>
+          <div class="changeSchedule" id = "showDay1pin">
+          </div>
         </a>
         <h3>August 24th</h3>
-
         <a onclick="showDay2();"  href = "" style = "display: inline-block;">
           <div class="changeSchedule" id = "showDay2pin" style = "background-color: #D0D0D0">
           </div>
         </a>
         <h3>August 25th</h3>
-
       </div>
       
       <script>
+        //To Change Tables
         function showDay1() {
           var x = document.getElementById("First-day");
           var y = document.getElementById("Second-day");
@@ -171,6 +183,7 @@
     </div>
     <img id = "spinnystar3" src="./Hackathon_files/spinny3.svg" alt="spinning star">
 
+    <!-- Sponsors -->
     <div id = "sponsors"><br><br>
       <h2 class="header"> SPONSORS </h2>
       <div id = "sponsors-grid">
@@ -178,21 +191,18 @@
           <img src="./Hackathon_files/sponsor1.png" alt="sponsor1">
           <img src="./Hackathon_files/sponsor2.png" alt="sponsor2">
         </div>
-
         <div>
           <img src="./Hackathon_files/sponsor3.png" alt="sponsor3">
         </div>
-
         <div>
           <img src="./Hackathon_files/sponsor2.png" alt="sponsor3">
         </div>
-
       </div>
-      
     </div>
     <br>
     <br>
     <br>
+
     <!-- FOOTER -->
     <center>
       <div id="info">
@@ -211,5 +221,5 @@
         <br>
       </div>
     </center>
-
-</body></html>
+  </body>
+</html>
