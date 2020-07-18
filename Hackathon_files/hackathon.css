@@ -24,7 +24,6 @@
   src: url("Fonts/proxima-nova.ttf");
 }
 
-
 * {
   margin: 0px;
   box-sizing: border-box;
@@ -32,18 +31,17 @@
 
 html{
   overflow-x: hidden;
-  background:
-  url("../Hackathon_files/about-bkg.svg") 100% 0% no-repeat;
+  background: url("../Hackathon_files/about-bkg.svg") 100% 0% no-repeat;
   background-size: cover;
   max-height: 700px;
-  width: 100%;
-  background-attachment: scroll;
   background-attachment: scroll;
 }
 
 body {
+  width: 100%;
   font-family: 'ProximaNova', sans-serif;
 }
+
 h2.header{
   margin-top: 5%;
   text-align: center;
@@ -51,17 +49,7 @@ h2.header{
   font-size: 400%;
 }
 
-#divider{
-  position: relative;
-  top: -5%;
-  width: 100%;
-  z-index: -1;
-}
 /* menu css */
-#header {
-
-}
-
 #first-logo {
   width: 7%;
   margin-left: 10%;
@@ -90,6 +78,7 @@ h2.header{
 }
 /* end of menu css */
 
+
 /*SPINNING STARS*/
 #spinnystar{
   z-index: 10;
@@ -109,7 +98,7 @@ h2.header{
   z-index: -1;
   width: 40%;
   height: 40%;
-  -webkit-animation: other-rotation 60s infinite linear;
+  -webkit-animation: counter-rotation 60s infinite linear;
 }
 #spinnystar3{
   z-index: 10;
@@ -119,7 +108,7 @@ h2.header{
   z-index: -1;
   width: 20%;
   height: 20%;
-  -webkit-animation: other-rotation 60s infinite linear;
+  -webkit-animation: rotation 60s infinite linear;
 }
 @-webkit-keyframes rotation {
     from {
@@ -129,7 +118,7 @@ h2.header{
         -webkit-transform: rotate(359deg);
     }
 }
-@-webkit-keyframes other-rotation {
+@-webkit-keyframes counter-rotation {
     from {
         -webkit-transform: rotate(0deg);
     }
@@ -137,17 +126,18 @@ h2.header{
         -webkit-transform: rotate(-359deg);
     }
 }
-/*End of spinning stars*/
+/*End of spinny stars*/
 
 /*FRONT PAGE*/
 #intro{
-  margin: 10% 10%;
+  margin: 10%;
   color: #FFFFFF;
   text-align: center;
 }
-
-#register{
-
+h1.header{
+  margin-top: -5%;
+  font-family: 'Pretendo', sans-serif;
+  font-size: 500%;
 }
 .register{
   color: #FFFFFF;
@@ -166,24 +156,15 @@ h2.header{
 .grow:hover{
   transform: scale(1.03);
 }
-
-h1.header{
-  margin-top: -5%;
-  font-family: 'Pretendo', sans-serif;
-  font-size: 500%;
-}
-
 #when{
   font-family: 'Gilmer-bold', sans-serif;
   font-size: 200%;
 }
-
 #description{
   width: 70%;
-  margin: auto;
+  margin: auto auto 15px auto;
   font-family: 'Gilmer-medium', sans-serif;
   font-size: 180%;
-  margin-bottom: 15px;
 }
 /*end of front PAGE*/
 
@@ -212,7 +193,7 @@ h1.header{
   font-family: 'Gilmer-medium', sans-serif;
   font-size:170%;
 }
-.prize-img{
+.prize-bkg{
   height: 100%;
   width: 100%;
 
@@ -225,7 +206,6 @@ a:hover{
 /*Schedule*/
 #schedule section{
   padding: 0% 5% 7% 5%;
-
 }
 
 #schedule{
@@ -234,12 +214,11 @@ a:hover{
   url("../Hackathon_files/schedule-bkg.svg") 100% 0% no-repeat;
   background-size: cover;
   background-attachment: scroll;
-  background-attachment: scroll;
   position: relative;
   z-index: -1;
 }
 
-#schedule h3, #schedule button{
+#schedule h3{
   display: inline-block;
   font-family: 'Gilmer-medium', sans-serif;
 }
@@ -248,10 +227,10 @@ a:hover{
   bottom: 20px;
   margin-right: 30px;
 }
-#First-day-th {
+#First-day tr th{
   background: #D060F7;
 }
-#Second-day-th{
+#Second-day tr th{
   background: #FF7586;
 }
 #showDay2pin, #showDay1pin{
@@ -267,7 +246,6 @@ a:hover{
 #showDay2pin:hover, #showDay1pin:hover{
   filter: brightness(85%);
 }
-
 
 tr:hover{
   background-color: #1158AD;
@@ -351,7 +329,6 @@ td, th {
   #prize-container p{
     font-size:140%;
   }
-
 }
 @media only screen and (max-width: 950px){
   #schedule{
@@ -377,10 +354,7 @@ td, th {
   #when{
     font-size: 150%;
   }
-  #intro p{
-    font-size: 120%;
-  }
-  #register{
+  #intro p, #register{
     font-size: 120%;
   }
   #prize-container h3{
@@ -394,18 +368,15 @@ td, th {
     transform: scale(1);
   }
   #schedule-bkg{
-  position: absolute;
-  object-fit: cover;
-  min-height: 900px;
-  max-height: 1000px;
-  width: 110%;
-  z-index: -1;
-}
+    position: absolute;
+    object-fit: cover;
+    min-height: 900px;
+    max-height: 1000px;
+    width: 110%;
+    z-index: -1;
+  }
 #toggleSchedule{
   margin-bottom: 0px;
   }
-
-
-
 }
 
