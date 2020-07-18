@@ -273,21 +273,22 @@ td, th {
 /*End of Schedule*/
 
 /*SPONSORS*/
+#sponsors{
+  padding-bottom: 10%;
+}
 #sponsors-grid{
   display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
-  grid-template-rows: 50px 50px;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
-#sponsors-grid div{
-  height: 20px;
-  width: 20px;
-}
+
 #sponsors-grid div img{
   display: inline-block;
-  height: 50px;
-  width: 50px;
+  height: 100px;
+  width: 100px;
+  padding: 20px;
 }
 /*end of sponsors*/
 
