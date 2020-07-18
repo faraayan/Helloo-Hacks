@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <!-- saved from url=(0040)http://helloo-world.com/learn/learn.html -->
-<html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <link rel="stylesheet" href="./Learn_files/learn.css">
-    <link href="./Learn_files/css" rel="stylesheet">
-    <title> Learn </title>
+<html lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title> Helloo Hacks </title>
+    <link rel="stylesheet" href="./Hackathon_files/hackathon.css">
+    <link href="./Hackathon_files/css" rel="stylesheet">
+    <link rel="icon" href="./Hackathon_files/earth.PNG">
   </head>
+
   <body>
 
     <!-- menu -->
@@ -13,7 +16,7 @@
         <center>
         </center>
         <div id="menu-links">
-          <img id="first-logo" src="./Learn_files/earth.PNG" alt="logo">
+          <img id="first-logo" src="./Hackathon_files/earth.PNG" alt="logo">
           <a href="Home.html">Home</a>
           <a href="Hackathon.html">Hackathon</a>
           <a href="About.html">About</a>
@@ -22,18 +25,186 @@
           <a href="Create.html">Create</a>
         </div>
     </div>
+    
+    <!--About, Intro-->
+    <div id = "intro">
+      <h1 class="header">HELLOO HACKS</h1>
+      <br>
+      <h2 id = "when"> August 24 - August 25 | Virtual Event</h2>
+      <br>
+      <p id = "description"> Lorem ipsum dolor sit amet, sea at idque torquatos deseruisse. Minim dicit euismod ne pro, pro ne duis iusto voluptua.</p>
+      <a href="hi" id = "register">
+        <div class = "grow register">REGISTER</div>
+      </a>
+    </div>
+    <img id = "spinnystar" src="./Hackathon_files/spinny.svg" alt="spinning star">
+    <img id = "spinnystar2" src="./Hackathon_files/spinny2.svg" alt="spinning star">
+    <br>
+    <br>
+    <br>
     <br>
 
-    <center>
-      <h1 class="header"> Hackathon </h1>
+    <!-- Prizes -->
+    <div id = "Prizes">
+      <h2 class="header"> PRIZES </h2>
+      <br><br>
+      <div id = "prize-container">
+        <div><img src="./Hackathon_files/1st-place.svg" class = "grow prize-bkg" alt="box"></div>
+        <div><img src="./Hackathon_files/2nd-place.svg" class = "grow prize-bkg" alt="box"></div>
+        <div><img src="./Hackathon_files/3rd-place.svg" class = "grow prize-bkg" alt="box"></div>
+        <div>
+          <h3>1st Place</h3>
+          <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <div>
+          <h3>2nd Place</h3>
+          <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <div>
+          <h3>3rd Place</h3>
+          <p>Lorem ipsum dolor sit amet</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Schedule -->
+    <div id = "schedule">
+      <br><br>
+      <br><br>
+      <br><br>
+      <br><br>
+      <section>
+      <h2 class="header"> SCHEDULE </h2>
+      <br>
+      <br>
+      <div id = "toggleSchedule"> 
+        <a onclick="showDay1();" style = "display: inline-block;">
+          <div class="changeSchedule" id = "showDay1pin">
+          </div>
+        </a>
+        <h3>August 24th</h3>
+        <a onclick="showDay2();" style = "display: inline-block;">
+          <div class="changeSchedule" id = "showDay2pin" style = "background-color: #D0D0D0">
+          </div>
+        </a>
+        <h3>August 25th</h3>
+      </div>
       
-    </center>
-  
+      <script>
+        //To Change Tables
+        function showDay1() {
+          var x = document.getElementById("First-day");
+          var y = document.getElementById("Second-day");
+          x.style.display = "block";
+          y.style.display = "none";
+          document.getElementById("showDay1pin").style.background = "#DC76FF";
+          document.getElementById("showDay2pin").style.background = "#D0D0D0";
+          }
+        function showDay2() {
+          var x = document.getElementById("First-day");
+          var y = document.getElementById("Second-day");
+          y.style.display = "block";
+          document.getElementById("showDay1pin").style.background = "#D0D0D0";
+          document.getElementById("showDay2pin").style.background = "#FF7586";
+          x.style.display = "none";
+          /*document.getElementById("showDay1pin").style.background-color = 'gray';
+            document.getElementById("showDay2pin").style.background-color = "green";*/
+          }
+      </script>
+      <table id = "First-day" class = "center">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Workshop</th>
+            <th>Presenter</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>9:00am - 11:00am EST</td>
+            <td>Web Design</td>
+            <td>Bob Joe</td>
+          </tr>
+          <tr>
+            <td>12:00pm - 1:00pm EST</td>
+            <td>Intro to Machine Learning</td>
+            <td>Joe Bob</td>
+          </tr>
+          <tr>
+            <td>1:00pm - 2:00pm EST</td>
+            <td>Intro to Python</td>
+            <td>Bob Bob</td>
+          </tr>
+          <tr>
+            <td>2:00pm - 3:00pm EST</td>
+            <td>Coding Challenge</td>
+            <td>Joe Joe</td>
+          </tr>
+          <tr>
+            <td>3:00pm - 4:00pm EST</td>
+            <td>Intro to Java</td>
+            <td>Billy Bob</td>
+          </tr>
+          <tr>
+            <td>3:00pm - 4:00pm EST</td>
+            <td>Intro to Java</td>
+            <td>Billy Bob</td>
+          </tr>
+        </tbody>
+      </table>
+      <table id = "Second-day" class = "center" style = "display: none">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Workshop</th>
+            <th>Presenter</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>9:00am - 11:00am EST</td>
+            <td>Finish Projects</td>
+            <td>Bob Joe</td>
+          </tr>
+          <tr>
+            <td>11:00am - 12:00pm EST</td>
+            <td>Pitch Time!</td>
+            <td>Joe Bob</td>
+          </tr>
+          <tr>
+            <td>1:00pm - 2:00pm EST</td>
+            <td>Final Remarks</td>
+            <td>Bob Bob</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    </div>
+    <img id = "spinnystar3" src="./Hackathon_files/spinny3.svg" alt="spinning star">
+
+    <!-- Sponsors -->
+    <div id = "sponsors"><br><br>
+      <h2 class="header"> SPONSORS </h2>
+      <div id = "sponsors-grid">
+        <div><img class = "grow" src="./Hackathon_files/sponsor1.png" alt="sponsor1"></div>
+        <div><img class = "grow" src="./Hackathon_files/sponsor1.png" alt="sponsor2"></div>
+        <div><img class = "grow" src="./Hackathon_files/sponsor1.png" alt="sponsor3"></div>
+        <div><img class = "grow" src="./Hackathon_files/sponsor1.png" alt="sponsor1"></div>
+        <div><img class = "grow" src="./Hackathon_files/sponsor1.png" alt="sponsor1"></div>
+        <div><img class = "grow" src="./Hackathon_files/sponsor1.png" alt="sponsor2"></div>
+        <div><img class = "grow" src="./Hackathon_files/sponsor1.png" alt="sponsor2"></div>
+        <div><img class = "grow" src="./Hackathon_files/sponsor1.png" alt="sponsor3"></div>
+        <div><img class = "grow" src="./Hackathon_files/sponsor1.png" alt="sponsor1"></div> 
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
 
     <!-- FOOTER -->
     <center>
       <div id="info">
-        <a href="https://www.instagram.com/hellooworldsite/" target="_blank"><img src="./Learn_files/87390.png" id="instagram-icon"></a>
+        <a href="https://www.instagram.com/hellooworldsite/" target="_blank"><img src="./Hackathon_files/87390.png" id="instagram-icon"></a>
         <br>
         <br>
         <b><p> #Hacktivist </p></b>
@@ -48,5 +219,5 @@
         <br>
       </div>
     </center>
-
-</body></html>
+  </body>
+</html>
