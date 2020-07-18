@@ -31,15 +31,16 @@
 
 html{
   overflow-x: hidden;
-  background: url("../Hackathon_files/about-bkg.svg") 100% 0% no-repeat;
-  background-size: cover;
-  max-height: 700px;
-  background-attachment: scroll;
+  background-color: #F7F7F7;
 }
 
 body {
   width: 100%;
   font-family: 'ProximaNova', sans-serif;
+  background: url("../Hackathon_files/about-bkg.svg") 100% 0% no-repeat;
+  background-size: cover;
+  max-height: 700px;
+  background-attachment: scroll;
 }
 
 h2.header{
@@ -81,31 +82,28 @@ h2.header{
 
 /*SPINNING STARS*/
 #spinnystar{
-  z-index: 10;
+  z-index: 0;
   position: absolute;
   left: -32%;
   top: -27%;
-  z-index: -1;
   width: 100%;
   height: 100%;
   -webkit-animation: rotation 60s infinite linear;
 }
 #spinnystar2{
-  z-index: 10;
+  z-index: 0;
   position: absolute;
   left: 75%;
   top: 70%;
-  z-index: -1;
   width: 40%;
   height: 40%;
   -webkit-animation: counter-rotation 60s infinite linear;
 }
 #spinnystar3{
-  z-index: 10;
+  z-index: 1;
   position: absolute;
   left: -5%;
   top: 280%;
-  z-index: -1;
   width: 20%;
   height: 20%;
   -webkit-animation: rotation 60s infinite linear;
@@ -134,6 +132,10 @@ h2.header{
   color: #FFFFFF;
   text-align: center;
 }
+#intro h1, #intro h2, #intro p, #register, #header{
+  position: relative;
+  z-index: 10;
+}
 h1.header{
   margin-top: -5%;
   font-family: 'Pretendo', sans-serif;
@@ -142,7 +144,7 @@ h1.header{
 .register{
   color: #FFFFFF;
   padding: 7px 40px;
-  background-color: #0065DF;
+  background-color: #2E7AE6;
   border-radius: 50px;
   font-family: 'Gilmer-bold', sans-serif;
   line-height: 50px;
