@@ -401,8 +401,8 @@ td, th {
     width: 110%;
     z-index: -1;
   }
-#toggleSchedule{
-  margin-bottom: 0px;
+  #toggleSchedule{
+    margin-bottom: 0px;
   }
 }
 
