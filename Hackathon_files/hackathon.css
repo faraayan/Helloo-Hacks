@@ -183,7 +183,7 @@ h1.header{
 }
 #prize-container>div{
   text-align: center;
-  padding: 20px;
+  padding: 5%;
 }
 #prize-container h3{
   text-align: center;
@@ -198,7 +198,14 @@ h1.header{
 .prize-bkg{
   height: 100%;
   width: 100%;
-
+}
+.prize-img{
+  position: relative;
+  height: auto;
+  width: 80%;
+  max-width: 200px;
+  top: -90%;
+  left: -19%;
 }
 /*end of prizes*/
 a:hover{
@@ -365,6 +372,13 @@ td, th {
   }
   #prize-container p{
     font-size:100%;
+  }
+  .prize-bkg{
+    max-width: 100px;
+  }
+  .prize-img{
+    min-width: 120px;
+    top: -77%;
   }
   table{
     margin-top: 0;
