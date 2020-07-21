@@ -405,4 +405,13 @@ td, th {
     margin-bottom: 0px;
   }
 }
-
+#tables {
+  display: flex;
+  justify-content: center;
+}
+  #First-day{
+    align-self: center;
+  }
+  #Second-day{
+    align-self: center;
+  }
