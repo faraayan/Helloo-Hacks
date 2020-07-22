@@ -39,7 +39,7 @@ body {
   font-family: 'ProximaNova', sans-serif;
   background: url("../Hackathon_files/about-bkg.svg") 100% 0% no-repeat;
   background-size: cover;
-  max-height: 700px;
+  max-height: 800px;
   background-attachment: scroll;
 }
 
@@ -128,9 +128,10 @@ h2.header{
 
 /*FRONT PAGE*/
 #intro{
-  margin: 10%;
+  margin: 13% 10% 10% 10%;
   color: #FFFFFF;
   text-align: center;
+
 }
 #intro h1, #intro h2, #intro p, #register, #header{
   position: relative;
