@@ -250,12 +250,15 @@ a:hover{
   position: relative;
   bottom: 20px;
   border-radius: 200px 200px 0px 200px;
+  transition: filter .5s ease-in-out;
 }
 
 #showDay2pin:hover, #showDay1pin:hover{
   filter: brightness(85%);
 }
-
+tr{
+  transition: background .5s ease-in-out;
+}
 tr:hover{
   background-color: #1158AD;
 }
@@ -290,6 +293,7 @@ td, th {
   min-height: 99%;
   max-width: 100%;
   max-height: 100%;
+  margin-top: -5%;
 }
 #plants-left{
   position: relative;
@@ -409,6 +413,9 @@ td, th {
     margin: 0 auto;
     height: 100px;
     width: 100px;
+  }
+  #sponsors{
+    margin-top: -15%;
   }
 }
 @media only screen and (max-width: 950px){
