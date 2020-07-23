@@ -304,6 +304,42 @@ td, th {
   right: 20px;
   height: 100px;
 }
+#team-grid{
+  display: grid;
+  grid-row-gap: 50px;
+  grid-column-gap: 0px;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-item: center;
+}
+#team-grid div{
+
+}
+#team-grid .headshot{
+
+  margin: 0 auto;
+  height: 100px;
+  width: 100px;
+}
+#team-grid .headshot img{
+   background-color: pink;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+}
+#team-grid div h3, #team-grid div p{
+  text-align: center;
+}
+#team-grid div h3{
+  margin-top: 10px;
+ font-family: 'Gilmer-medium', sans-serif;
+ font-size: 150%;
+}
+#team-grid div p{
+ font-family: 'Gilmer-regular', sans-serif;
+ font-size: 110%;
+}
 /*End of team*/
 
 /*SPONSORS*/
@@ -396,6 +432,9 @@ td, th {
   }
   #when{
     font-size: 150%;
+  }
+  #team-grid{
+    grid-template-columns: repeat(3, 1fr);
   }
   #intro p{
     font-size: 140%;
