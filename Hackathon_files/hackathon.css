@@ -318,8 +318,8 @@ td, th {
 #team-grid .headshot{
 
   margin: 0 auto;
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
 }
 #team-grid .headshot img{
    background-color: pink;
@@ -334,7 +334,7 @@ td, th {
 #team-grid div h3{
   margin-top: 10px;
  font-family: 'Gilmer-medium', sans-serif;
- font-size: 150%;
+ font-size: 160%;
 }
 #team-grid div p{
  font-family: 'Gilmer-regular', sans-serif;
@@ -404,6 +404,11 @@ td, th {
   }
   #schedule section{
     margin-top: -10%;
+  }
+  #team-grid .headshot{
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
   }
 }
 @media only screen and (max-width: 950px){
