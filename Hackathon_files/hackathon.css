@@ -44,10 +44,13 @@ body {
 }
 
 h2.header{
-  margin-top: 5%;
+  margin-top: 0%;
   text-align: center;
   font-family: 'Gilmer-bold', sans-serif;
   font-size: 400%;
+}
+#team h2.header, #schedule h2.header{
+  margin-top: 5%;
 }
 
 /* menu css */
@@ -260,7 +263,7 @@ tr{
   transition: background .5s ease-in-out;
 }
 tr:hover{
-  background-color: #1158AD;
+  background-color: #3275D4;
 }
 #toggleSchedule{
   margin-bottom: 50px;
@@ -280,8 +283,73 @@ td, th {
   font-family: 'Gilmer-medium', sans-serif;
   font-size: 1.2rem;
 }
+#tables {
+  display: flex;
+  justify-content: center;
+}
+#First-day{
+  align-self: center;
+}
+#Second-day{
+  align-self: center;
+}
 /*End of Schedule*/
 
+/*FAQ*/
+#faq{
+  padding: 20px;
+}
+#test{
+  display: flex;
+  flex-direction: row;
+}
+#questions{
+  padding: 20px;
+}
+
+.collapsible {
+  font-family: 'Gilmer-bold', sans-serif;
+  background-color: #F7F7F7;;
+  color: black;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.5rem;
+  border-radius: 10px 10px 0px 0px;
+}
+.question-top{
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+}
+.question-top img{
+  height: 20px;
+  width: 20px;
+}
+.active {
+  background-color: white;
+}
+.active .collapsible{
+  border-radius: 10px 10px 0px 0px;
+  background-color: white;
+}
+.active img{
+  transform: rotate(180deg);
+}
+
+.content {
+  font-family: 'proxima-nova', sans-serif;
+  font-size: 1.2rem;
+  padding: 0px 25px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: white;
+  border-radius: 0px 0px 10px 10px;
+}
+/*End of FAQ*/
 /*TEAM*/
 #team{
   background:
@@ -386,12 +454,12 @@ td, th {
 @media only screen and (max-width: 1100px) {
   h1.header{
     margin-top: 7%;
-    font-size: 430%;
+    font-size: 600%;
   }
   #when{
     font-size: 180%;
   }
-  h2.header{
+  #team h2.header, #schedule h2.header{
     margin-top: 20%;
   }
   #intro p{
@@ -437,9 +505,9 @@ td, th {
   }
   h1.header{
     margin-top: 15%;
-    font-size: 400%;
+    font-size: 450%;
   }
-  h2.header{
+  #team h2.header, #schedule h2.header{
     margin-top: 25%;
   }
   #when{
@@ -454,6 +522,9 @@ td, th {
   }
   #register{
     font-size: 100%;
+  }
+  #Prizes{
+    margin-top: -15%;
   }
   #prize-container h3{
     font-size: 180%;
@@ -483,14 +554,8 @@ td, th {
   #toggleSchedule{
     margin-bottom: 0px;
   }
-}
-#tables {
+  #test{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
-  #First-day{
-    align-self: center;
-  }
-  #Second-day{
-    align-self: center;
-  }
+}

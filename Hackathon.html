@@ -203,6 +203,84 @@
     </section>
     </div><br><br><br><br><br><br>
     <img id = "spinnystar3" src="./Hackathon_files/spinny3.svg" alt="spinning star">
+    
+
+    <!-- FAQ -->
+    <div id = "faq">
+      <h2 class="header"> FAQ </h2><br><br>
+      <div id = "test">
+      <div id = "questions">
+
+        <div class = "question-top">
+          <button class="collapsible">Who can attend Helloo Hacks?</button>
+          <img src="./Hackathon_files/toggle.svg" alt="">
+        </div>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br>
+        </div><br>
+        <div class = "question-top">
+          <button class="collapsible">Who can attend Helloo Hacks?</button>
+          <img src="./Hackathon_files/toggle.svg" alt="">
+        </div>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br>
+        </div><br>
+        <div class = "question-top">
+          <button class="collapsible">Who can attend Helloo Hacks?</button>
+          <img src="./Hackathon_files/toggle.svg" alt="">
+        </div>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br>
+        </div><br>
+      </div>
+      <div id = "questions">
+        <div class = "question-top">
+          <button class="collapsible">Who can attend Helloo Hacks?</button>
+          <img src="./Hackathon_files/toggle.svg" alt="">
+        </div>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br>
+        </div><br>
+        <div class = "question-top">
+          <button class="collapsible">Who can attend Helloo Hacks?</button>
+          <img src="./Hackathon_files/toggle.svg" alt="">
+        </div>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br>
+        </div><br>
+        <div class = "question-top">
+          <button class="collapsible">Who can attend Helloo Hacks?</button>
+          <img src="./Hackathon_files/toggle.svg" alt="">
+        </div>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br>
+        </div><br>
+      </div>
+    </div>
+<br><br>
+      
+
+      <script>
+      var coll = document.getElementsByClassName("question-top");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } 
+        });
+      }
+      </script>
+
+    </div>
+
+
+    <!-- TEAM -->
     <div id = "team"><br>
       <h2 class="header"> TEAM </h2><br><br>
        <div id = "team-grid">
@@ -254,6 +332,8 @@
       <img id = "plants-left" src="./Hackathon_files/plants-left.svg" alt="a tree and bush">
       <img id = "plants-right" src="./Hackathon_files/trees-right.svg" alt="two trees">
     </div>
+    
+
     <!-- Sponsors -->
     <div id = "sponsors"><br><br>
       <h2 class="header"> SPONSORS </h2>
