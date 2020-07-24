@@ -236,17 +236,17 @@ a:hover{
   font-family: 'Gilmer-bold', sans-serif;
   font-size: 1.5rem;
   position: relative;
-  bottom: 20px;
+  bottom: 30px;
   margin-right: 30px;
 }
 #First-day tr th{
-  background: #D060F7;
+  background: #B486FF;
 }
 #Second-day tr th{
-  background: #FF7586;
+  background: #EBC357;
 }
 #showDay2pin, #showDay1pin{
-  background-color: #DC76FF;
+  background-color: #B486FF;
   height: 30px;
   width: 30px;
   transform: rotate(45deg);
@@ -317,12 +317,12 @@ td, th {
   text-align: left;
   outline: none;
   font-size: 1.5rem;
-  border-radius: 10px 10px 0px 0px;
 }
 .question-top{
   display: flex;
   flex-direction: row;
   padding: 30px;
+  border-radius: 10px 10px 0px 0px;
 }
 .question-top img{
   height: 20px;
@@ -332,7 +332,6 @@ td, th {
   background-color: white;
 }
 .active .collapsible{
-  border-radius: 10px 10px 0px 0px;
   background-color: white;
 }
 .active img{
@@ -342,7 +341,7 @@ td, th {
 .content {
   font-family: 'proxima-nova', sans-serif;
   font-size: 1.2rem;
-  padding: 0px 25px;
+  padding: 0px 30px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -460,7 +459,7 @@ td, th {
     font-size: 180%;
   }
   #team h2.header, #schedule h2.header{
-    margin-top: 20%;
+    margin-top: 10%;
   }
   #intro p{
     font-size: 150%;
@@ -487,12 +486,8 @@ td, th {
   }
 }
 @media only screen and (max-width: 950px){
-  #schedule{
-    background:
-    url("../Hackathon_files/mobile-schedule-bkg.svg") 100% 0% no-repeat;
-    background-size: cover;
-  }
-  #spinnystar, #spinnystar2, #spinnystar3{
+
+  #spinnystar{
     display: none;
   }
 }
@@ -500,7 +495,7 @@ td, th {
   #menu-links {
     font-size: 70%;
   }
-  #spinnystar, #spinnystar2, #spinnystar3{
+  #spinnystar{
     display: none;
   }
   h1.header{
@@ -542,14 +537,6 @@ td, th {
   table{
     margin-top: 0;
     transform: scale(1);
-  }
-  #schedule-bkg{
-    position: absolute;
-    object-fit: cover;
-    min-height: 900px;
-    max-height: 1000px;
-    width: 110%;
-    z-index: -1;
   }
   #toggleSchedule{
     margin-bottom: 0px;
