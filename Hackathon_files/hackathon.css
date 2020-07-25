@@ -175,9 +175,10 @@ h1.header{
 /*end of front PAGE*/
 
 /*Prizes*/
-#prizes {
+#Prizes {
   display: inline-block;
   color: #2C2C2D;
+  padding: 20px;
 }
 #prize-container{
   display: grid;
@@ -210,6 +211,22 @@ h1.header{
   max-width: 200px;
   top: -90%;
   left: -19%;
+}
+#prize-list{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+}
+#Prizes h3{
+  font-family: "Gilmer-bold", sans-serif;
+  text-align: center;
+  font-size: 120%;
+}
+#Prizes p{
+  font-family: "Gilmer-regular", sans-serif;
+  text-align: center;
+  font-size: 120%;
 }
 /*end of prizes*/
 a:hover{
@@ -519,7 +536,7 @@ td, th {
     font-size: 100%;
   }
   #Prizes{
-    margin-top: -15%;
+    margin-top: 10%;
   }
   #prize-container h3{
     font-size: 180%;
