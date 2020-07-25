@@ -378,7 +378,7 @@ td, th {
 #team-grid{
   display: grid;
   grid-row-gap: 50px;
-  grid-column-gap: 0px;
+  grid-column-gap: 30px;
   grid-template-columns: repeat(4, 1fr);
   align-items: start;
   padding: 10%;
@@ -387,10 +387,9 @@ td, th {
 
 }
 #team-grid .headshot{
-
   margin: 0 auto;
-  height: 120px;
-  width: 120px;
+  height: 130px;
+  width: 130px;
 }
 #team-grid .headshot img{
    background-color: pink;
@@ -509,6 +508,7 @@ td, th {
     font-size: 150%;
   }
   #team-grid{
+    grid-column-gap: 10px;
     grid-template-columns: repeat(3, 1fr);
   }
   #intro p{
