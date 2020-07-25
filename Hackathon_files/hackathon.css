@@ -380,8 +380,8 @@ td, th {
   grid-row-gap: 50px;
   grid-column-gap: 0px;
   grid-template-columns: repeat(4, 1fr);
-  align-items: center;
-  justify-item: center;
+  align-items: start;
+  padding: 10%;
 }
 #team-grid div{
 
@@ -484,6 +484,12 @@ td, th {
   #sponsors{
     margin-top: -15%;
   }
+  #schedule{
+    background:
+    url("../Hackathon_files/schedule-bkg-mobile.svg") 100% 0% no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+  }
 }
 @media only screen and (max-width: 650px) {
   #menu-links {
@@ -535,12 +541,6 @@ td, th {
   #toggleSchedule{
     margin-bottom: 0px;
   }
-  #schedule{
-  background:
-  url("../Hackathon_files/schedule-bkg-mobile.svg") 100% 0% no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
-}
   #test{
   display: flex;
   flex-direction: column;
